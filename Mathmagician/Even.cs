@@ -8,21 +8,22 @@ namespace Mathmagician
 {
     public class Even
     {
-        public List<int> returnList = new List<int>();
+        
 
-        public int workingNum = 0;
+        
 
-        public void Iterate(int userNum)
+        public List<int> Iterate(int userNum)
         {
-            for (int i = 0; i < userNum; i++)
+            List<int> ReturnList = new List<int>();
+            int workingNum = 0;
+           
+        for (int i = 0; i < userNum; i++)
             {
-                returnList.Add(workingNum);
+                ReturnList.Add(workingNum);
                 workingNum = workingNum + 2;
             }
 
-            Console.WriteLine("Here they are:  ");
-            returnList.ForEach(Console.Write);
-
+            return ReturnList;
         }
 
     }

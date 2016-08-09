@@ -39,7 +39,8 @@ namespace Mathmagician
                 // Repeats the choice back to the user
                 Console.WriteLine("You picked " + userTypeProper + " numbers.");
             }
-            else {
+            else
+            {
                 // If user did not choose an accepted option:
                 Console.WriteLine("Please enter one of the following choices: Integer, Prime, Fibonacci, Even, Odd");
             }
@@ -51,6 +52,11 @@ namespace Mathmagician
             Console.Write(prompt);
             int userNum = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Spiffers! I'm going to print a sequence of {0} {1} numbers.", userNum, userTypeProper);
+
+            Even my_even = new Even();
+            my_even.Iterate(userNum);
+
+            Console.Read();
         }
     }
 }
