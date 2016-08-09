@@ -8,6 +8,14 @@ namespace Mathmagician.Tests
     public class EvenTests
     {
         [TestMethod]
+        public void CanCreateAnInstanceOfEven()
+        {
+            Even testEven = new Even();
+
+            Assert.IsNotNull(testEven);
+        }
+
+        [TestMethod]
         public void CreatingAnIterationList()
         {
             Even testEven = new Even();

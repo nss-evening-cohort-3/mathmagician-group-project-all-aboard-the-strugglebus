@@ -8,11 +8,7 @@ namespace Mathmagician
 {
     public class Even
     {
-        
-
-        
-
-        public List<int> Iterate(int userNum)
+        public List<int>Iterate(int userNum)
         {
             List<int> ReturnList = new List<int>();
             int workingNum = 0;
@@ -22,9 +18,7 @@ namespace Mathmagician
                 ReturnList.Add(workingNum);
                 workingNum = workingNum + 2;
             }
-
             return ReturnList;
         }
-
     }
 }
