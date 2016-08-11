@@ -23,7 +23,7 @@ namespace Mathmagician
 
         public int GetFirstNumber()
         {
-            return 0;
+            return 1;
         }
 
         public int GetNext(int v)
@@ -31,12 +31,18 @@ namespace Mathmagician
             return v+1;
         }
 
-        public List<int> GetList(int end)
+        public List<int> GetList(int userNum)
         {
-            List<int> list = new List<int>();
-            for (int i = 0; i < end; i++)
-                list.Add(i + 1);
-            return list;
+            List<int> IntegersList = new List<int>();
+            IntegersList.Add(GetFirstNumber());
+        
+             for (int i = GetFirstNumber(); i < userNum; i++)
+            {
+                IntegersList.Add(GetNext(i));
+               
+            }
+                 
+            return IntegersList;
         }
 
     }

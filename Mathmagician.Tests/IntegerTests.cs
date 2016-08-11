@@ -31,7 +31,7 @@ namespace Mathmagician.Tests
 
 
             //Assert
-            Assert.AreEqual(0, NumberZero);
+            Assert.AreEqual(1, NumberZero);
         }
 
         [TestMethod]
