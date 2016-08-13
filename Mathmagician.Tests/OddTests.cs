@@ -21,7 +21,7 @@ namespace Mathmagician.Tests
             Odd testOdd = new Odd();
             List<int> ReturnList = testOdd.Iterate(3);
        
-            CollectionAssert.AreEqual(new List<int> { 0, 2, 4 }, ReturnList);
+            CollectionAssert.AreEqual(new List<int> { 1, 3, 5 }, ReturnList);
         }
     }
 }
