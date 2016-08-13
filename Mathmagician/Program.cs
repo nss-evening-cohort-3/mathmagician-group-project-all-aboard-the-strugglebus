@@ -52,9 +52,11 @@ namespace Mathmagician
             Console.Write(prompt);
             int userNum = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Spiffers! I'm going to print a sequence of {0} {1} numbers.", userNum, userTypeProper);
-
             Even my_even = new Even();
+            Odd my_odd = new Odd();
             my_even.Iterate(userNum);
+            my_odd.Iterate(userNum);
+            Console.WriteLine();
 
             Console.Read();
         }
